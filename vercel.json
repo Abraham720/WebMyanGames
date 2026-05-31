@@ -30,6 +30,7 @@
     "CACHE_DRIVER": "array",
     "LOG_CHANNEL": "stderr",
     "SESSION_DRIVER": "cookie",
-    "DB_CONNECTION": "pgsql"
+    "DB_CONNECTION": "pgsql",
+    "PHP_INI_SCAN_DIR": "/tmp"
   }
 }
