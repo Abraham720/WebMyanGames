@@ -48,6 +48,14 @@
             "@php artisan config:clear --ansi @no_additional_args",
             "@php artisan test"
         ],
+        "post-install-cmd": [
+            "@php artisan package:discover --ansi",
+            "@php -r \"if (!is_dir('/tmp/views')) mkdir('/tmp/views', 0777, true);\"",
+            "@php -r \"if (!is_dir('/tmp/cache')) mkdir('/tmp/cache', 0777, true);\"",
+            "@php -r \"if (!is_dir('/tmp/config')) mkdir('/tmp/config', 0777, true);\"",
+            "@php -r \"if (!is_dir('/tmp/bootstrap')) mkdir('/tmp/bootstrap', 0777, true);\"",
+            "@php -r \"if (!is_dir('/tmp/storage')) mkdir('/tmp/storage', 0777, true);\""
+        ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
