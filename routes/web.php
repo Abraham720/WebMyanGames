@@ -1,5 +1,25 @@
 <?php
 
+Route::get('/debug', function () {
+    try {
+        \DB::connection()->getPdo();
+        $dbStatus = 'Database: Connected ✓';
+    } catch (\Exception $e) {
+        $dbStatus = 'Database Error: ' . $e->getMessage();
+    }
+    
+    return response()->json([
+        'status' => 'Laravel is running',
+        'php_version' => PHP_VERSION,
+        'app_env' => env('APP_ENV'),
+        'app_key_set' => !empty(env('APP_KEY')),
+        'db_connection' => env('DB_CONNECTION'),
+        'db_host' => env('DB_HOST'),
+        'database' => $dbStatus,
+    ]);
+});
+
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FeedController;
 use App\Http\Controllers\NewsController;
