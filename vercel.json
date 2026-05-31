@@ -20,7 +20,7 @@
     "APP_ENV": "production",
     "APP_DEBUG": "false",
     "APP_URL": "https://myangames.vercel.app",
-    "APP_KEY": "base64:ISI-DENGAN-APP_KEY-KAMU",
+    "APP_KEY": "base64:0zq8QJhdHT164aopd42AFD8XBKuVzv0pYdVSQZa2/DY=",
     "APP_CONFIG_CACHE": "/tmp/config.php",
     "APP_EVENTS_CACHE": "/tmp/events.php",
     "APP_PACKAGES_CACHE": "/tmp/packages.php",
