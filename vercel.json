@@ -20,7 +20,7 @@
     "APP_ENV": "production",
     "APP_DEBUG": "false",
     "APP_URL": "https://GANTI-NAMA-PROYEKMU.vercel.app",
-    "APP_KEY": "base64:Ed/VTS0YrgXV/4LqygnUXBP3FhEVUPcyeOhj1VnudUE=",
+    "APP_KEY": "base64:ISI-DENGAN-APP_KEY-KAMU",
     "APP_CONFIG_CACHE": "/tmp/config.php",
     "APP_EVENTS_CACHE": "/tmp/events.php",
     "APP_PACKAGES_CACHE": "/tmp/packages.php",
